@@ -1,0 +1,55 @@
+form {
+  padding: 40px;
+}
+
+input {
+  padding: 5px 20px;
+  width: 100%;
+  line-height: 16px;
+}
+
+#url {
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 1% 2% 3% 0;
+  width: 98%;
+  height: 25px;
+  border: 1px solid #DDDDDD;
+
+  &:focus {
+    box-shadow: 0 0 5px rgb(37, 185, 226);
+    border: 2.5px solid rgba(81, 203, 238, 1);
+  }
+}
+
+#submit {
+  width: 100%;
+  background-color: rgb(222, 228, 230);
+
+  &:hover {
+    background-color: rgb(203, 209, 211);
+    border-radius: 2%;
+  }
+}
+
+.article {
+  font-size: 12px;
+  width: 80%;
+  color: #202020;
+  font-family: 'Tahoma', serif;
+
+  .title {
+    font-size: 14px;
+  }
+  .source {
+    font-size: 12px;
+    color: #666;
+  }
+  .sentiment {
+    color: darkcyan;
+  }
+  .abody {
+    font-size: 10px;
+  }
+}

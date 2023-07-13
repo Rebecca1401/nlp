@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Evaluate a News Article with Natural Language Processing</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Evaluate a News Article with<br>Natural Language Processing</h1>
+    </header>
+
+    <main class="main">
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <div id="invalid"></div>
+                <input id="url" type="text" name="input" value="" placeholder="Search key value of an article" required>
+                <input type="submit" id="submit" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+            </form>
+        </section>
+
+        <section id="form_result">
+            <strong>Form Results:</strong>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="copy">
+            <div id="line">
+                <span id="designed-by"><i>programmed by </i></span>&nbsp; ♥ <span class="designer">Rebecca Koch</span>♥
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
